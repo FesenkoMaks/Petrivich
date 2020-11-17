@@ -1,0 +1,25 @@
+@import '../../style/variable';
+
+.container{
+  @extend %container;
+  display: flex;
+  align-items: center;
+}
+
+.productItem{
+  border: 1px solid black;
+  .productImg{
+
+  }
+  .productInfo{
+    .productTitle{
+
+    }
+    .assocProducts{
+
+    }
+  }
+  .productPrice{
+
+  }
+}

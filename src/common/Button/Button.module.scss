@@ -1,0 +1,28 @@
+@import '../../../styles/variable';
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px;
+  color: $color-text-secondary;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: $color-accent;
+  text-transform: uppercase;
+  height: 40px;
+  border: 1px solid $color-accent;
+  transition: .2s;
+  outline: none;
+  margin-right: 3px;
+
+  &:hover {
+    border: 1px solid $color-accent;
+    background-color: #fff;
+    color: $color-accent;
+  }
+
+  &:disabled {
+    opacity: .5
+  }
+}
+
