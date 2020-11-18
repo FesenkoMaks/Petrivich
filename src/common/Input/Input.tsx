@@ -1,47 +1,25 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import classes from './Input.module.scss'
-import Icons from '../Icons/Icons'
 
 type InputPropsType
-   = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-   & { labelTitle?: string, error?: string }
+    = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+    & { bottomButtonClick: () => void; topButtonClick: () => void; }
 
-const Input = (props: InputPropsType) => {
+const Input = ({topButtonClick, bottomButtonClick, ...props}: InputPropsType) => {
 
-   const [showPassword, setShowPassword] = React.useState<boolean>(false)
+    return (
+        <label className={classes.label}>
+            <input {...props} type={'text'} className={classes.input}/>
+            <div className={classes.counter}>
+                <div className={classes.top} onClick={topButtonClick}>
 
-   const handleShowPassword = () => {
-      setShowPassword(prevState => !prevState)
-   }
+                </div>
+                <div className={classes.bottom} onClick={bottomButtonClick}>
 
-   const {labelTitle, error, ...restProps} = props
-   const type = props.type === 'password' && !showPassword ? 'password' : 'text'
-
-   return (
-      <label className={classes.label}>
-         {labelTitle && <span className={classes.label}>{labelTitle}</span>}
-         <input {...restProps} type={type} className={`${classes.input} ${props.className}`}/>
-         {
-            type === 'password' &&
-               <div className={classes.showPassword} onClick={handleShowPassword}>
-                  {Icons.Eye()}
-               </div>
-         }
-         {
-            showPassword &&
-            <div className={classes.showPassword} onClick={handleShowPassword}>
-               {Icons.EyeSlash()}
+                </div>
             </div>
-         }
-         {
-            error &&
-               <div className={classes.error}>
-                  {Icons.Error()}
-                  <div className={classes.errorMessage}>{error}</div>
-               </div>
-         }
-      </label>
-   )
+        </label>
+    )
 }
 
 export default React.memo(Input)

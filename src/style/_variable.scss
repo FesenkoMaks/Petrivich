@@ -1,11 +1,13 @@
 //colors
-$color-accent: #499c35;
-$color-title: #232323;
-$color-text-subtitle: #464646;
-$color-text-primary: #111;
-$color-text-secondary: #fff;
-$color-gray-light: #949494;
-$color-error: #ec1b1b;
+$color-accent: #F6B109;
+$color-white: #FFFFFF;
+$color-secondary: #ABABAB;
+
+$color-text-white: #FFFFFF;
+$color-text-black: #171717;
+$color-text-gray: #ABABAB;
+
+
 
 //fonts
 %poppins-bold {
@@ -16,7 +18,7 @@ $color-error: #ec1b1b;
 }
 %container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }

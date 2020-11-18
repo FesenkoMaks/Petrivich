@@ -1,0 +1,33 @@
+.productImg {
+  width: 25%;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .productImg {
+    width: 20%;
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  .productImg {
+    width: 100%;
+    text-align: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

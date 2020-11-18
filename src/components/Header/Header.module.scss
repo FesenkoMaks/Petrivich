@@ -1,7 +1,7 @@
-@import '../style/variable';
+@import '../../style/variable';
 
 .header {
-  background-color: yellow;
+  background-color: $color-accent;
   display: flex;
   align-items: center;
   width: 100%;
@@ -12,5 +12,26 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    .icon {
+      margin-left: 10px;
+      img {
+        width: 30px;
+        transition: width .3s;
+        &:hover {
+          width: 40px;
+        }
+      }
+    }
+    .shoppingBasket {
+      border-left: 1px solid $color-white;
+      margin-right: 20px;
+      padding-left: 20px;
+      color: $color-white;
+      font-size: 25px;
+      transition: font-size .3s;
+      &:hover {
+        font-size: 30px;
+      }
+    }
   }
 }

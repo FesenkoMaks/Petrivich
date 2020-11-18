@@ -1,14 +1,15 @@
 import React, {ButtonHTMLAttributes, DetailedHTMLProps} from 'react'
 import classes from './Button.module.scss'
+import Icons from "../Icon/Icon";
 
 type InputPropsType
     = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-    & { labelTitle?: string};
+    & { labelTitle?: string, productId: string };
 
 const Button = (props: InputPropsType) => {
-    const {labelTitle, ...restProps} = props
+    const {labelTitle, productId, ...restProps} = props
     return (
-        <button className={classes.btn} {...restProps}> {props.labelTitle}</button>
+        <button data-product-id={productId} className={classes.btn} {...restProps}>{Icons.ShoppingCart()} {props.labelTitle}</button>
     )
 }
 
