@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Petrivich/static/css/main.6a7035c1.chunk.css",
+    "main.js": "/Petrivich/static/js/main.d23167b1.chunk.js",
+    "main.js.map": "/Petrivich/static/js/main.d23167b1.chunk.js.map",
+    "runtime-main.js": "/Petrivich/static/js/runtime-main.3908fe38.js",
+    "runtime-main.js.map": "/Petrivich/static/js/runtime-main.3908fe38.js.map",
+    "static/js/2.abfd7f02.chunk.js": "/Petrivich/static/js/2.abfd7f02.chunk.js",
+    "static/js/2.abfd7f02.chunk.js.map": "/Petrivich/static/js/2.abfd7f02.chunk.js.map",
+    "static/js/3.f87c0af7.chunk.js": "/Petrivich/static/js/3.f87c0af7.chunk.js",
+    "static/js/3.f87c0af7.chunk.js.map": "/Petrivich/static/js/3.f87c0af7.chunk.js.map",
+    "index.html": "/Petrivich/index.html",
+    "static/css/main.6a7035c1.chunk.css.map": "/Petrivich/static/css/main.6a7035c1.chunk.css.map",
+    "static/js/2.abfd7f02.chunk.js.LICENSE.txt": "/Petrivich/static/js/2.abfd7f02.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3908fe38.js",
+    "static/js/2.abfd7f02.chunk.js",
+    "static/css/main.6a7035c1.chunk.css",
+    "static/js/main.d23167b1.chunk.js"
+  ]
+}
